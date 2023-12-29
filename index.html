@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBNB - BEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="barra contenedor">
+        <div class="barra__logo">
+          <p class="barra__nombre">Viaje</p>
+        </div>
+        <nav class="barra__navegacion">
+          <a href="#" class="barra__link">Lugares para hospedarte</a>
+          <a href="#" class="barra__link">Experiencias</a>
+          <a href="#" class="barra__link">Experiencias en Linea</a>
+        </nav>
+        <div class="barra__login">
+          <a href="#" class="barra__link">Hazte anfitrión</a>
+        </div>
+      </div>
+
+      <form class="formulario contenedor">
+        <div class="formulario__campo">
+          <label for="ubicacion" class="formulario__label">Ubicación</label>
+          <input
+            type="text"
+            id="ubicacion"
+            class="formulario__input"
+            placeholder="¿A donde viajas?"
+          />
+        </div>
+        <div class="formulario__campo">
+          <label for="llegada" class="formulario__label">Llegada</label>
+          <input type="date" id="llegada" class="formulario__input" />
+        </div>
+        <div class="formulario__campo">
+          <label for="salida" class="formulario__label">Salida</label>
+          <input type="date" id="salida" class="formulario__input" />
+        </div>
+        <div class="formulario__campo">
+          <label for="huespedes" class="formulario__label">Huéspedes</label>
+          <input
+            type="number"
+            id="huespedes"
+            class="formulario__input"
+            placeholder="¿Cuántos?"
+          />
+        </div>
+        <div class="formulario__campo">
+          <input type="submit" class="formulario__submit" value="Buscar" />
+        </div>
+      </form>
+
+      <div class="header__busqueda contenedor">
+        <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+        <a href="#" class="header__busqueda-boton">Búsqueda Flexible</a>
+      </div>
+    </header>
+
+    <section class="destinos contenedor seccion">
+      <h2 class="destinos__heading">Descubre alojamientos populares</h2>
+
+      <ul class="destinos__grid">
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_1.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">New York</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_2.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">París</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_3.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">San Francisco</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_4.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">Egipto</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_5.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">Londres</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_6.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">Italia</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_7.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">India</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+        <li class="destino">
+          <div class="destino__img">
+            <img src="./build/img/icono_destino_8.png" alt="Imagen Destino" />
+          </div>
+          <div class="destino__informacion">
+            <h3 class="destino__nombre">Grecia</h3>
+            <p class="destino__distancia">4 Horas en avión</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contenedor seccion lugares">
+      <h2 class="lugares__heading">Vive en cualquier lugar del mundo</h2>
+      <ul class="lugares__grid">
+        <li class="lugar">
+          <div class="lugar__imagen">
+            <img
+              src="./build/img/vive_1.jpg"
+              alt="Lugares"
+              class="lugar__img"
+            />
+          </div>
+          <div class="lugar__info">
+            <p class="lugar__nota">Escapadas al aire libre</p>
+          </div>
+        </li>
+        <li class="lugar">
+          <div class="lugar__imagen">
+            <img
+              src="./build/img/vive_2.jpg"
+              alt="Lugares"
+              class="lugar__img"
+            />
+          </div>
+          <div class="lugar__info">
+            <p class="lugar__nota">Alojamientos únicos</p>
+          </div>
+        </li>
+        <li class="lugar">
+          <div class="lugar__imagen">
+            <img
+              src="./build/img/vive_3.jpg"
+              alt="Lugares"
+              class="lugar__img"
+            />
+          </div>
+          <div class="lugar__info">
+            <p class="lugar__nota">Alojamientos enteros</p>
+          </div>
+        </li>
+        <li class="lugar">
+          <div class="lugar__imagen">
+            <img
+              src="./build/img/vive_4.jpg"
+              alt="Lugares"
+              class="lugar__img"
+            />
+          </div>
+          <div class="lugar__info">
+            <p class="lugar__nota">Con tu mascota</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="seccion contenedor anfitrion">
+      <div class="anfitrion__contenido">
+        <h2 class="anfitrion__heading">Anímate a ser un anfitrión</h2>
+        <p class="anfitrion__texto">
+          Comparte tu espacio para ganar dinero extra y aprovechar nuevas
+          oportunidades.
+        </p>
+        <a href="#" class="anfitrion__enlace">Más información</a>
+      </div>
+    </section>
+
+    <section class="seccion contenedor experiencias">
+      <h2 class="experiencias__heading">Descubre Experiencias</h2>
+      <p class="experiencias__texto">
+        Actividades únicas con expertos locales, en persona o en línea.
+      </p>
+
+      <ul class="experiencias__grid">
+        <li class="experiencia">
+          <div class="experiencia__imagen">
+            <img
+              src="./build/img/experiencia_1.jpg"
+              alt="Experiencias nuevas"
+              class="experiencia__img"
+            />
+          </div>
+          <div class="experiencia__informacion">
+            <h3 class="experiencia__heading">Experiencias</h3>
+            <p class="experiencia__texto">
+              Actividades Locales estés donde estés.
+            </p>
+          </div>
+        </li>
+        <li class="experiencia">
+          <div class="experiencia__imagen">
+            <img
+              src="./build/img/experiencia_2.jpg"
+              alt="Experiencias nuevas"
+              class="experiencia__img"
+            />
+          </div>
+          <div class="experiencia__informacion">
+            <h3 class="experiencia__heading">Experiencias</h3>
+            <p class="experiencia__texto">Visíta una ciudad y vive en ella.</p>
+          </div>
+        </li>
+        <li class="experiencia">
+          <div class="experiencia__imagen">
+            <img
+              src="./build/img/experiencia_3.jpg"
+              alt="Experiencias nuevas"
+              class="experiencia__img"
+            />
+          </div>
+          <div class="experiencia__informacion">
+            <h3 class="experiencia__heading">Experiencias en línea</h3>
+            <p class="experiencia__texto">Actividades interactivas en vivo.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer seccion">
+      <div class="footer__grid contenedor">
+        <div class="navegaciones">
+          <h3 class="navegaciones__heading">Acerca de</h3>
+          <nav class="navegacion">
+            <a href="#" class="navegacion__enlace">Enlace 1</a>
+            <a href="#" class="navegacion__enlace">Enlace 2</a>
+            <a href="#" class="navegacion__enlace">Enlace 3</a>
+            <a href="#" class="navegacion__enlace">Enlace 4</a>
+          </nav>
+        </div>
+        <div class="navegaciones">
+          <h3 class="navegaciones__heading">Comunidad</h3>
+          <nav class="navegacion">
+            <a href="#" class="navegacion__enlace">Enlace 1</a>
+            <a href="#" class="navegacion__enlace">Enlace 2</a>
+            <a href="#" class="navegacion__enlace">Enlace 3</a>
+            <a href="#" class="navegacion__enlace">Enlace 4</a>
+          </nav>
+        </div>
+        <div class="navegaciones">
+          <h3 class="navegaciones__heading">anfitrión</h3>
+          <nav class="navegacion">
+            <a href="#" class="navegacion__enlace">Enlace 1</a>
+            <a href="#" class="navegacion__enlace">Enlace 2</a>
+            <a href="#" class="navegacion__enlace">Enlace 3</a>
+            <a href="#" class="navegacion__enlace">Enlace 4</a>
+          </nav>
+        </div>
+        <div class="navegaciones">
+          <h3 class="navegaciones__heading">Asistencia</h3>
+          <nav class="navegacion">
+            <a href="#" class="navegacion__enlace">Enlace 1</a>
+            <a href="#" class="navegacion__enlace">Enlace 2</a>
+            <a href="#" class="navegacion__enlace">Enlace 3</a>
+            <a href="#" class="navegacion__enlace">Enlace 4</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
